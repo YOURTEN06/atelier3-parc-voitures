@@ -6,7 +6,7 @@ class Voiture:
         self.kilometrage = kilometrage
 
     def afficher_info(self):
-        pass
+        print(self.marque, self.modele, self.annee, self.kilometrage)
 
 
 class Parc:
@@ -15,7 +15,11 @@ class Parc:
         self.voitures = []
 
     def entrerVoiture(self, voiture):
-        pass
+        if len(self.voitures) < self.capacite:
+            self.voitures.append(voiture)
+            print("Voiture ajoutée")
+        else:
+            print("Parc plein")
 
     def sortirVoiture(self, voiture):
         pass
