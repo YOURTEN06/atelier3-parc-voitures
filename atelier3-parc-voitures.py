@@ -8,10 +8,6 @@ class Voiture:
     def afficher_info(self):
         pass
 
-class Parc:
-    def __init__(self, capacite):
-        self.capacite = capacite
-        self.voitures = []
 
 class Parc:
     def __init__(self, capacite):
