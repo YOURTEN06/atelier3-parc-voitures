@@ -22,7 +22,11 @@ class Parc:
             print("Parc plein")
 
     def sortirVoiture(self, voiture):
-        pass
+        if voiture in self.voitures:
+            self.voitures.remove(voiture)
+            print("Voiture retirée")
+        else:
+            print("Voiture non trouvée")
 
     def calculerNbrPlacesLibres(self):
         pass
